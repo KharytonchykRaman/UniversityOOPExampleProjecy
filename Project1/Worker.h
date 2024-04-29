@@ -1,26 +1,25 @@
 #pragma once
-#include <string>
+#include "Human.h"
 
-using namespace std;
-
-class Worker
+class Worker : public Human
 {
 private:
-	string name;
-	int age;
 	double salary;
 
 public:
-	Worker() {};
-	Worker(string name, int age, double salary) :
-		name(name), age(age), salary(salary) {};
-	~Worker() {};
-	int getAge();
-	string getName();
+	Worker() {
+		cout << "worker constructor calling;"<<endl;
+	};
+																		
+	Worker(string name, int age, double salary) : Human(name , age), salary(salary) {};
+
+	~Worker() {
+		cout << "Worker destructor calling;" << endl;
+	}
+
 	double getSalary();
-	void setAge(int age);
-	void setName(string name);
 	void setSalary(double salary);
+
 	string getInfo();
 };
 
