@@ -9,7 +9,10 @@ string Human::getName() {
 };
 
 void Human::setAge(int age) {
-	this->age = age;
+	if (age >= MIN_AGE && age <= MAX_AGE)
+	{
+		this->age = age;
+	}
 };
 
 void Human::setName(string name) {

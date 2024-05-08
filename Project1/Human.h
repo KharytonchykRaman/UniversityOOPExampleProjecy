@@ -6,11 +6,14 @@ using namespace std;
 
 class Human
 {
-private:
+protected:
 	string name;
 	int age;
 
 public:
+
+	static const int MAX_AGE = 100;
+	static const int MIN_AGE = 0;
 
 	Human() {
 		cout << "human constructor calling;"<< endl;
