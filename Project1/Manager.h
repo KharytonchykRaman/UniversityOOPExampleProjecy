@@ -1,7 +1,8 @@
 #pragma once
 #include "Group.h"
+#include "Worker.h"
 
-class Manager {
+class Manager : public Worker {
 public:
 	static double getMaxMark(Group group);
 
