@@ -3,7 +3,7 @@
 
 class Worker : public Human
 {
-private:
+protected:
 	double salary;
 
 public:
