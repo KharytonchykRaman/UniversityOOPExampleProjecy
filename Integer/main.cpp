@@ -6,25 +6,57 @@ using namespace std;
 int main() {
 
 	Integer integer(5);
+	Integer test(3);
 
-	cout << integer.add(7).getValue() << endl;
-	cout << integer.mul(7).getValue() << endl;
-	cout << integer.div(2).getValue() << endl;
-	cout << integer.sub(100).getValue() << endl;
-	cout << integer.mod(2).getValue() << endl;
-	cout << integer.pow(3).getValue() << endl;
-	cout << integer.opp().getValue() << endl;
+	Integer result = integer.add(test);
+	cout << result.getValue() << endl;
+
+	result = integer.mul(test);
+	cout << result.getValue() << endl;
+
+	result = integer.div(test);
+	cout << result.getValue() << endl;
+
+	result = integer.sub(test);
+	cout << result.getValue() << endl;
+
+	result = integer.mod(test);
+	cout << result.getValue() << endl;
+
+	result = integer.pow(test);
+	cout << result.getValue() << endl;
+
+	result = integer.opp();
+	cout << result.getValue() << endl;
 
 	integer.setValue(15);
 	cout << "Results after setting new value:\n";
 
-	cout << integer.add(7).getValue() << endl;
-	cout << integer.mul(7).getValue() << endl;
-	cout << integer.div(2).getValue() << endl;
-	cout << integer.sub(100).getValue() << endl;
-	cout << integer.mod(2).getValue() << endl;
-	cout << integer.pow(3).getValue() << endl;
-	cout << integer.opp().getValue() << endl;
+	result = integer.add(test);
+	cout << result.getValue() << endl;
+
+	result = integer.mul(test);
+	cout << result.getValue() << endl;
+
+	result = integer.div(test);
+	cout << result.getValue() << endl;
+
+	result = integer.sub(test);
+	cout << result.getValue() << endl;
+
+	result = integer.mod(test);
+	cout << result.getValue() << endl;
+
+	result = integer.pow(test);
+	cout << result.getValue() << endl;
+
+	result = integer.opp();
+	cout << result.getValue() << endl;
+
+	Integer a(10);
+	Integer b(17);
+	Integer c = a + b;
+	cout << c.getValue()<< endl;
 
 	return 0;
 }
