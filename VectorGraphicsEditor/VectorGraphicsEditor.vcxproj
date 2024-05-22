@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{104714D9-6443-448F-9747-4EF705149651}</ProjectGuid>
-    <RootNamespace>TransportProject</RootNamespace>
+    <ProjectGuid>{A83A9942-E276-4614-9407-772C733ACD2D}</ProjectGuid>
+    <RootNamespace>VectorGraphicsEditor</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -119,21 +119,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Bus.cpp" />
-    <ClCompile Include="Car.cpp" />
-    <ClCompile Include="GasStation.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Editor.cpp" />
+    <ClCompile Include="Figure.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Motorbike.cpp" />
-    <ClCompile Include="Transport.cpp" />
-    <ClCompile Include="Truck.cpp" />
+    <ClCompile Include="Square.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Bus.h" />
-    <ClInclude Include="Car.h" />
-    <ClInclude Include="GasStation.h" />
-    <ClInclude Include="Motorbike.h" />
-    <ClInclude Include="Transport.h" />
-    <ClInclude Include="Truck.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Editor.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="Square.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
