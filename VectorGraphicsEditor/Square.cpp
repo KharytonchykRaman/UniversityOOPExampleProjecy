@@ -1,13 +1,13 @@
 #include "Square.h"
 
-double Square::countPerimeter()  {
+double Square::countPerimeter() {
 	return a * 4;
 };
 
-double Square::countSquare()  {
+double Square::countSquare() {
 	return a * a;
 };
 
-string Square::draw()  {
-	return "Square";
+string Square::draw() {
+	return "Square" + Figure::draw();
 }
