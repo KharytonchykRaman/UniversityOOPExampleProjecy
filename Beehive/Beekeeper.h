@@ -7,6 +7,6 @@ private:
 	int age;
 	string name;
 public:
-	double calcTotalHoneyDay(Bee bee);
-	double calcTotalHoneyDays(Bee bee, int numDay);
+	double calcTotalHoneyDay(Beehive bees);
+	double calcTotalHoneyDays(Beehive bees, int numDay);
 };

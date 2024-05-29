@@ -6,21 +6,21 @@ int Beehive::getSize() {
 
 void Beehive::add(Bee bee) {
 	if (size == 0) {
-		list = new Bee[1];
-		list[0] = bee;
+		bees = new Bee[1];
+		bees[0] = bee;
 	}
 	else {
 		Bee* temp = new Bee[size + 1];
 
 		for (int i = 0; i < size; i++)
 		{
-			temp[i] = list[i];
+			temp[i] = bees[i];
 		}
 
 		temp[size] = bee;
 
-		delete[] list;
-		list = temp;
+		delete[] bees;
+		bees = temp;
 	}
 	size++;
 }
@@ -32,12 +32,12 @@ void Beehive::remove(int index) {
 		for (int i = 0, j = 0; i < size; i++)
 		{
 			if (i != index) {
-				temp[j++] = list[i];
+				temp[j++] = bees[i];
 			}
 		}
 
-		delete[] list;
-		list = temp;
+		delete[] bees;
+		bees = temp;
 		size--;
 	}
 }
@@ -52,20 +52,19 @@ void Beehive::remove(Bee bee) {
 		for (int i = 0, j = 0; i < size; i++)
 		{
 			if (i != index) {
-				temp[j++] = list[i];
+				temp[j++] = bees[i];
 			}
 		}
 		size--;
-		delete[] list;
-		list = temp;
+		delete[] bees;
+		bees = temp;
 	}
 }
 
 int Beehive::getFirstIndex(Bee bee) {
 	for (int i = 0; i < size; i++)
 	{
-		if (bee.getLifeTimeDay() == list[i].getLifeTimeDay()
-			&& bee.getHoney() == list[i].getHoney()) {
+		if (bee.convert() == bees[i].convert()) {
 			return i;
 		}
 	}
@@ -75,7 +74,7 @@ int Beehive::getFirstIndex(Bee bee) {
 
 Bee Beehive::get(int index) {
 	if (index >= 0 && index < size) {
-		return list[index];
+		return bees[index];
 	}
 
 	return Bee();
@@ -86,7 +85,7 @@ string Beehive::convertToString() {
 
 	for (int i = 0; i < size; i++)
 	{
-		s += list[i].convert() + "\n";
+		s += bees[i].convert() + "\n";
 	}
 
 	return s;

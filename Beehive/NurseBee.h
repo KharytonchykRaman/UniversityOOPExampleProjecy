@@ -6,8 +6,10 @@ class NurseBee :
 private:
 	int numMilkDay;
 public:
+	const int HONEY_COEFFICIENT = 7;
+
 	NurseBee() : numMilkDay(0) {};
-	NurseBee(int numMilkDay) : numMilkDay(numMilkDay), Bee(lifeTimeDay, honey) {};
+	NurseBee(int numMilkDay) : numMilkDay(numMilkDay), Bee(lifeTimeDay) {};
 
 	int getNumMilkDay();
 	void setNumMilkDay(int numMilkDay);

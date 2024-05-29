@@ -4,11 +4,12 @@ class ScoutBee :
 	public Bee
 {
 private:
-	string gatheringType;
 	int flightDistance;
 public:
+	const int HONEY_COEFFICIENT = 1.5;
+
 	ScoutBee() :  flightDistance(0) {};
-	ScoutBee(int flightDistance) : flightDistance(flightDistance), Bee(lifeTimeDay, honey) {};
+	ScoutBee(int flightDistance) : flightDistance(flightDistance), Bee(lifeTimeDay) {};
 
 	int getFlightDistance();
 	void setFlightDistance(int flightDistance);

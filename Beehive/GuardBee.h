@@ -6,8 +6,10 @@ class GuardBee :
 private:
 	int numDefendedAttack;
 public:
+	const int HONEY_COEFFICIENT = 10;
+
 	GuardBee() :  numDefendedAttack(0) {};
-	GuardBee( int numDefendedAttack) : numDefendedAttack(numDefendedAttack), Bee(lifeTimeDay, honey) {};
+	GuardBee( int numDefendedAttack) : numDefendedAttack(numDefendedAttack), Bee(lifeTimeDay) {};
 
 	int getNumDefendedAttack();
 	void setNumDefendedAttack(int numDefendedAttack);

@@ -7,18 +7,14 @@ class Bee
 {
 protected:
 	int lifeTimeDay;
-	int honey;
 public:
-	Bee() : lifeTimeDay(0), honey(0) {};
-	Bee(int lifeTimeDay, int honey) : lifeTimeDay(lifeTimeDay), honey(honey) {};
+	Bee() : lifeTimeDay(0) {};
+	Bee(int lifeTimeDay) : lifeTimeDay(lifeTimeDay) {};
 
 	int getLifeTimeDay();
 	void setLifeTimeDay(int lifeTimeDay);
 
-	int getHoney();
-	void setHoney(int honey);
-
 	virtual double calcHoney();
-
+	virtual double honeyCollected();
 	virtual string convert();
 };

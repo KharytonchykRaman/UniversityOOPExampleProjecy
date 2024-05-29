@@ -10,7 +10,7 @@
 class Beehive
 {
 private:
-	Bee* list;
+	Bee* bees;
 	int size;
 
 	string constructionType;

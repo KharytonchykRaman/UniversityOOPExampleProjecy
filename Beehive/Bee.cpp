@@ -11,17 +11,14 @@ void Bee::setLifeTimeDay(int lifeTimeDay) {
 	}
 }
 
-int Bee::getHoney() {
-	return honey;
-}
-
-void Bee::setHoney(int honey) {
-	if (honey > 0)
-	{
-		this->honey = honey;
-	}
-}
-
 string Bee::convert() {
-	return "The bee lived for " + to_string(lifeTimeDay) + " days and produces " + to_string(honey) + " honey a day";
+	return "The bee lived for " + to_string(lifeTimeDay) + " days";
+}
+
+double Bee::calcHoney() {
+	return 0;
+}
+
+double Bee::honeyCollected() {
+	return 0;
 }

@@ -4,13 +4,15 @@ class DroneBee :
 	public Bee
 {
 private:
-	string size;
+	int size;
 public:
-	DroneBee() : size("none") {};
-	DroneBee(string size) : size(size), Bee(lifeTimeDay, honey) {};
+	const int HONEY_COEFFICIENT = 5;
 
-	string getSize();
-	void setSize(string size);
+	DroneBee() : size(1) {};
+	DroneBee(int size) : size(size), Bee(lifeTimeDay) {};
+
+	int getSize();
+	void setSize(int size);
 
 	double calcHoney() override;
 	string convert();
