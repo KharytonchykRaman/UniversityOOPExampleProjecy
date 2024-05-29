@@ -15,5 +15,5 @@ public:
 	void setSize(int size);
 
 	double calcHoney() override;
-	string convert();
+	string convert() override;
 };

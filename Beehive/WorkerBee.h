@@ -21,6 +21,6 @@ public:
 	void setFlightDistance(int flightDistance);
 
 	double calcHoney() override;
-	string convert();
+	string convert() override;
 	double honeyCollected() override;
 };

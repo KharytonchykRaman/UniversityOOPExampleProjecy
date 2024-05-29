@@ -11,7 +11,7 @@ void ScoutBee::setFlightDistance(int flightDistance) {
 }
 
 double ScoutBee::calcHoney() {
-	flightDistance* HONEY_COEFFICIENT;
+	return flightDistance* HONEY_COEFFICIENT;
 }
 
 string ScoutBee::convert() {

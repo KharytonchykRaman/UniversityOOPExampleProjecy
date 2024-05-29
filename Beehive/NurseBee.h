@@ -15,5 +15,5 @@ public:
 	void setNumMilkDay(int numMilkDay);
 
 	double calcHoney() override;
-	string convert();
+	string convert() override;
 };

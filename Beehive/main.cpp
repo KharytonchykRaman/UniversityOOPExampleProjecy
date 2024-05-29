@@ -5,6 +5,7 @@ int main() {
 
 	WorkerBee worker1("default", 15), worker2("default", 10), worker3("default", 13),
 		worker4("default", 10), worker5("default", 9), worker6("default", 14);
+	//Bee* builder1 = new BuilderBee(3);
 	BuilderBee builder1(3);
 	DroneBee drone1(2);
 	GuardBee guard1(7);
@@ -34,7 +35,7 @@ int main() {
 	{
 		cout << "Input amount of days: ";
 		cin >> dayNum;
-	} while (dayNum > 0);
+	} while (dayNum < 1);
 
 	cout << "This beehive produces " << beekeeper.calcTotalHoneyDays(beehive, dayNum)
 		<< " honey in " << dayNum << " days";
