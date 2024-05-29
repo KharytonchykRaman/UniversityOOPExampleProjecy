@@ -22,4 +22,3 @@ public:
 	virtual double countSquare() = 0;
 	virtual string draw() = 0;
 };
-

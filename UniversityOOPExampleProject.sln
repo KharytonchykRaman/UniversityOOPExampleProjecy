@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TransportProject", "Transpo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorGraphicsEditor", "VectorGraphicsEditor\VectorGraphicsEditor.vcxproj", "{A83A9942-E276-4614-9407-772C733ACD2D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Beehive", "Beehive\Beehive.vcxproj", "{1B2244DC-A075-4D0B-97EA-C3D4C1B29DB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{A83A9942-E276-4614-9407-772C733ACD2D}.Release|x64.Build.0 = Release|x64
 		{A83A9942-E276-4614-9407-772C733ACD2D}.Release|x86.ActiveCfg = Release|Win32
 		{A83A9942-E276-4614-9407-772C733ACD2D}.Release|x86.Build.0 = Release|Win32
+		{1B2244DC-A075-4D0B-97EA-C3D4C1B29DB4}.Debug|x64.ActiveCfg = Debug|x64
+		{1B2244DC-A075-4D0B-97EA-C3D4C1B29DB4}.Debug|x64.Build.0 = Debug|x64
+		{1B2244DC-A075-4D0B-97EA-C3D4C1B29DB4}.Debug|x86.ActiveCfg = Debug|Win32
+		{1B2244DC-A075-4D0B-97EA-C3D4C1B29DB4}.Debug|x86.Build.0 = Debug|Win32
+		{1B2244DC-A075-4D0B-97EA-C3D4C1B29DB4}.Release|x64.ActiveCfg = Release|x64
+		{1B2244DC-A075-4D0B-97EA-C3D4C1B29DB4}.Release|x64.Build.0 = Release|x64
+		{1B2244DC-A075-4D0B-97EA-C3D4C1B29DB4}.Release|x86.ActiveCfg = Release|Win32
+		{1B2244DC-A075-4D0B-97EA-C3D4C1B29DB4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
