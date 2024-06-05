@@ -9,7 +9,7 @@ public:
 	const int HONEY_COEFFICIENT = 10;
 
 	GuardBee() :  numDefendedAttack(0) {};
-	GuardBee( int numDefendedAttack) : numDefendedAttack(numDefendedAttack), Bee(lifeTimeDay) {};
+	GuardBee( int numDefendedAttack, int lifeTimeDay) : numDefendedAttack(numDefendedAttack), Bee(lifeTimeDay) {};
 
 	int getNumDefendedAttack();
 	void setNumDefendedAttack(int numDefendedAttack);

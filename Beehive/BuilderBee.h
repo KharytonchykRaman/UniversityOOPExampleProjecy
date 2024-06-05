@@ -10,7 +10,7 @@ public:
 	int const HONEY_COEFFICIENT = 5;
 
 	BuilderBee() : workNum(0) {};
-	BuilderBee(double workNum) : workNum(workNum), Bee(lifeTimeDay) {};
+	BuilderBee(double workNum, int lifeTimeDay) : workNum(workNum), Bee(lifeTimeDay) {};
 
 	double getWorkNum();
 	void setWorkNum(double workNum);

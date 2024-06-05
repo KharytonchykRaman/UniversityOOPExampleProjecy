@@ -11,7 +11,7 @@ public:
 	const int HONEY_COEFFICIENT = 2;
 
 	QueenBee() : size(1), numEggDay(0) {};
-	QueenBee(int size, int numEggDay) : size(size), numEggDay(numEggDay), Bee(lifeTimeDay) {};
+	QueenBee(int size, int numEggDay, int lifeTimeDay) : size(size), numEggDay(numEggDay), Bee(lifeTimeDay) {};
 
 	int getSize();
 	void setSize(int size);

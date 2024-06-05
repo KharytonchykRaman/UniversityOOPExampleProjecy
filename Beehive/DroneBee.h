@@ -9,7 +9,7 @@ public:
 	const int HONEY_COEFFICIENT = 5;
 
 	DroneBee() : size(1) {};
-	DroneBee(int size) : size(size), Bee(lifeTimeDay) {};
+	DroneBee(int size, int lifeTimeDay) : size(size), Bee(lifeTimeDay) {};
 
 	int getSize();
 	void setSize(int size);

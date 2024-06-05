@@ -6,8 +6,8 @@ double Beekeeper::calcTotalHoneyDay(Beehive bees) {
 
 	for (int i = 0; i < bees.getSize(); i++)
 	{
-		honeySpend += bees.get(i).calcHoney();
-		honeyCollected += bees.get(i).honeyCollected();
+		honeySpend += bees.get(i)->calcHoney();
+		honeyCollected += bees.get(i)->honeyCollected();
 	}
 	return honeyCollected - honeySpend;
 }

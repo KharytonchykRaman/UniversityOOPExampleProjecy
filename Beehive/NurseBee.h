@@ -9,7 +9,7 @@ public:
 	const int HONEY_COEFFICIENT = 7;
 
 	NurseBee() : numMilkDay(0) {};
-	NurseBee(int numMilkDay) : numMilkDay(numMilkDay), Bee(lifeTimeDay) {};
+	NurseBee(int numMilkDay, int lifeTimeDay) : numMilkDay(numMilkDay), Bee(lifeTimeDay) {};
 
 	int getNumMilkDay();
 	void setNumMilkDay(int numMilkDay);
