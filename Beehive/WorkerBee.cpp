@@ -20,7 +20,7 @@ void WorkerBee::setFlightDistance(int flightDistance) {
 }
 
 double WorkerBee::calcHoney() {
-	flightDistance* HONEY_COEFFICIENT_WASTE;
+	return flightDistance* HONEY_COEFFICIENT_WASTE;
 }
 
 string WorkerBee::convert() {

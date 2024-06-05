@@ -20,5 +20,5 @@ public:
 	void setNumEggDay(int numEggDay);
 
 	double calcHoney() override;
-	string convert();
+	string convert() override;
 };

@@ -15,5 +15,5 @@ public:
 	void setNumDefendedAttack(int numDefendedAttack);
 
 	double calcHoney() override;
-	string convert();
+	string convert() override;
 };

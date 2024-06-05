@@ -16,5 +16,5 @@ public:
 	void setWorkNum(double workNum);
 
 	double calcHoney() override;
-	string convert();
+	string convert() override;
 };
