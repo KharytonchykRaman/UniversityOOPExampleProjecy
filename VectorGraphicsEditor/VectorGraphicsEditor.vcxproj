@@ -123,6 +123,7 @@
     <ClCompile Include="Editor.cpp" />
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
@@ -130,6 +131,7 @@
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Editor.h" />
     <ClInclude Include="Figure.h" />
+    <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="Triangle.h" />
   </ItemGroup>
