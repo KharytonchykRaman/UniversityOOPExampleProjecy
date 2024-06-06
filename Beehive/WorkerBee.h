@@ -8,7 +8,7 @@ private:
 	int flightDistance;
 public:
 	const int HONEY_COEFFICIENT_WASTE = 2;
-	const int HONEY_COEFFICIENT_COLLECT = 15;
+	const int HONEY_COEFFICIENT_COLLECT = 10;
 
 	WorkerBee() : gatheringType("default"), flightDistance(0) {};
 	WorkerBee(string gatheringType, int flightDistance, int lifeTimeDay) :

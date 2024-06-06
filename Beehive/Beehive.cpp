@@ -6,38 +6,38 @@ int Beehive::getSize() {
 
 void Beehive::add(Bee* bee) {
 	if (size == 0) {
-		*bees = new Bee[1];
+		bees = new Bee*[1];
 		bees[0] = bee;
 	}
 	else {
-		Bee* temp = new Bee[size + 1];
+		Bee** temp = new Bee*[size + 1];
 
 		for (int i = 0; i < size; i++)
 		{
-			temp[i] = *bees[i];
+			temp[i] = bees[i];
 		}
 
-		temp[size] = *bee;
+		temp[size] = bee;
 
 		delete[] bees;
-		*bees = temp;
+		bees = temp;
 	}
 	size++;
 }
 
 void Beehive::remove(int index) {
 	if (index >= 0 && index < size) {
-		Bee* temp = new Bee[size - 1];
+		Bee** temp = new Bee * [size - 1];
 
 		for (int i = 0, j = 0; i < size; i++)
 		{
 			if (i != index) {
-				temp[j++] = *bees[i];
+				temp[j++] = bees[i];
 			}
 		}
 
 		delete[] bees;
-		*bees = temp;
+		bees = temp;
 		size--;
 	}
 }
@@ -47,17 +47,17 @@ void Beehive::remove(Bee bee) {
 
 	if (index != -1) {
 
-		Bee* temp = new Bee[size - 1];
+		Bee** temp = new Bee * [size - 1];
 
 		for (int i = 0, j = 0; i < size; i++)
 		{
 			if (i != index) {
-				temp[j++] = *bees[i];
+				temp[j++] = bees[i];
 			}
 		}
 		size--;
 		delete[] bees;
-		*bees = temp;
+		bees = temp;
 	}
 }
 

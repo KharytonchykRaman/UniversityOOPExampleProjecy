@@ -14,18 +14,18 @@ int main() {
 
 	Beehive beehive;
 
-	//beehive.add(worker1);
-	//beehive.add(worker2);
-	//beehive.add(worker3);
-	//beehive.add(worker4);
-	//beehive.add(worker5);
-	//beehive.add(worker6);
+	beehive.add(&worker1);
+	beehive.add(&worker2);
+	beehive.add(&worker3);
+	beehive.add(&worker4);
+	beehive.add(&worker5);
+	beehive.add(&worker6);
 	beehive.add(drone1);
-	//beehive.add(guard1);
-	//beehive.add(nurse1);
-	//beehive.add(scout1);
+	beehive.add(&guard1);
+	beehive.add(&nurse1);
+	beehive.add(&scout1);
 	beehive.add(builder1);
-	//beehive.add(queen1);
+	beehive.add(&queen1);
 
 	Beekeeper beekeeper;
 
